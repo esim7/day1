@@ -1,0 +1,17 @@
+﻿@model List<WebApplication1.Models.Student>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+
+@{
+
+    foreach (var student in Model)
+    {
+        <h4>@student.FirstName - @student.LastName</h4>
+    }
+
+
+}

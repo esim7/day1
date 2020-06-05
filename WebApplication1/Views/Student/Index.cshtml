@@ -1,0 +1,24 @@
+﻿@model Student
+@{
+    ViewBag.Title = "Index";
+}
+
+@using WebApplication1.Models
+@* ViewBag example *@
+
+@*@ViewBag.StudentBag.Id
+    <br/>
+    @ViewBag.StudentBag.FirstName
+    <br />
+    @ViewBag.StudentBag.LastName*@
+
+
+@* ViewData example *@
+
+@*@((ViewData["Stud"] as Student).Id)*@ @* TODO: revise ViewData*@
+
+@Model.Id
+<br />
+@Model.FirstName
+<br />
+@Model.LastName
